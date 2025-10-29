@@ -37,6 +37,7 @@ class FilmViewHolder(val binding: FilmItemBinding) : RecyclerView.ViewHolder(bin
 
         binding.filmImageView.setOnClickListener { onClickListener(film.id) }
         binding.filmTextView.text= film.title
+        binding.yearTextView.text= film.year
         Picasso.get().load(film.poster).into(binding.filmImageView)
     }
 
